@@ -7,7 +7,7 @@ Python Auth System
 Used HWID auth for Windows
 
 ## Linux
-Used MAC auth for Windows
+Used MAC auth for Linux
 
 ## How to use
 1: Add pastebin/throwbin etc link to "urlhere"
