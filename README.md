@@ -16,7 +16,7 @@ Used MAC auth for Linux
 
 3: Add auth.py codes to your python script
 
-4: Add auth() code to your script
+4: Add auth() code to your python script
 
 5: Obfuscate your python script
 
