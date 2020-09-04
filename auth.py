@@ -14,7 +14,7 @@ def auth():
         if sys.platform.startswith("linux"):
             mac = subprocess.Popen("getmac", shell=True,stdout=subprocess.PIPE).communicate()[0].decode('utf-8').strip()
             useragent = {'User-Agent':'Python3 Auth System - Linux'}
-            r = requests.get('https://lilcsz.ml/gdj63acjbvge3s1aax',headers=useragent)
+            r = requests.get('urlhere',headers=useragent)
             if mac in r.text:
                     pass
                     print(f"{colors.OKGREEN}You are logged with: {mac}")
@@ -30,7 +30,7 @@ def auth():
         else:
             hwid = subprocess.check_output('wmic csproduct get uuid').decode().split('\n')[1].strip()
             useragent = {'User-Agent':'Python3 Auth System - Windows'}
-            r = requests.get('https://lilcsz.ml/gdj63acjbvge3s1aax',headers=useragent)
+            r = requests.get('urlhere',headers=useragent)
             if hwid in r.text:
                     pass
                     print(f"{colors.OKGREEN}You are logged with: {hwid}")
