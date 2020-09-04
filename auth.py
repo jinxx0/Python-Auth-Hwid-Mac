@@ -26,7 +26,6 @@ def auth():
                     time.sleep(999999999)
                     time.sleep(999999999)
                     time.sleep(999999999)
-                    sys.exit()
         else:
             hwid = subprocess.check_output('wmic csproduct get uuid').decode().split('\n')[1].strip()
             useragent = {'User-Agent':'Python3 Auth System - Windows'}
