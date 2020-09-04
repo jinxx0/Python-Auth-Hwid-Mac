@@ -11,10 +11,15 @@ Used MAC auth for Linux
 
 ## How to use
 1: Add pastebin/throwbin etc link to "urlhere"
+
 2: Add hwid/mac addresses to link
+
 3: Add auth.py codes to your python script
+
 4: Add auth() code
+
 5: Obfuscate your python script
+
 6: Done!
 
 
