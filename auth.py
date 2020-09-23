@@ -4,6 +4,9 @@ import time
 import requests
 import subprocess
 
+# Copyright 2020 github.com/lilcsz
+# [!] Do not share this code
+
 class colors:
     OKGREEN = '\033[92m'
     RED = '\033[1;31;48m'
@@ -12,6 +15,7 @@ def auth():
     global mac, hwid
     try:
         if sys.platform.startswith("linux"):
+            #MacAdressCheck
             mac = subprocess.Popen("getmac", shell=True,stdout=subprocess.PIPE).communicate()[0].decode('utf-8').strip()
             useragent = {'User-Agent':'Python3 Auth System - Linux'}
             r = requests.get('urlhere',headers=useragent)
@@ -27,6 +31,7 @@ def auth():
                     time.sleep(999999999)
                     time.sleep(999999999)
         else:
+            #HwidCheck
             hwid = subprocess.check_output('wmic csproduct get uuid').decode().split('\n')[1].strip()
             useragent = {'User-Agent':'Python3 Auth System - Windows'}
             r = requests.get('urlhere',headers=useragent)
